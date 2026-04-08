@@ -99,6 +99,11 @@ p{
     justify-content: space-between;
     margin-top: 0.5rem;
 }
+.profile-desc{
+    flex: 1;
+    padding-top: 6rem;
+}
+
 .profile-desc-grid{
     flex: 1;
     padding-top: 6rem;
@@ -137,7 +142,56 @@ p{
     gap:0.5rem 1rem;
 }
 
+.expert{
+    margin-top: 6rem;
 
+}
+
+.exp-title{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.exp-title h2{
+    flex: 1;
+    font-weight: 700;
+    font-size: 5rem;
+}
+
+.exp-title p{
+    flex: 1;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(20px,1fr));
+    gap: 2rem 1rem;
+}
+.icon{
+    margin-bottom: .5rem;
+}
+.icon img{
+    height: 1.2rem;
+}
+
+.skill-grid h4{
+    font-weight: 700;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid black;
+    text-transform: capitalize;
+}
+
+@media (max-width:1600px){
+    .exp-title{
+        flex-direction: column;
+    }
+
+    .skill-grid{
+        grid-template-columns: repeat(2,minmax(20px,1fr));
+    }
+}
 
 @media (max-width:1440px){
     
@@ -221,5 +275,14 @@ p{
     }
     .certi-dl dt{
         grid-column: 1/3;
+    }
+    .exp-title h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:320px){
+    .skill-grid{
+        grid-template-columns: repeat(1,minmax(20px,1fr));
     }
 }
