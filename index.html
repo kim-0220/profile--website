@@ -28,6 +28,36 @@
     <script src="./js/bbyong.js"></script>
 </head>
 <body>
+    <div class="cursor">
+        <img src="./img/cursor.png" alt="오렌지색 배경에 검은색 토끼 마우스커서">
+    </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        });
+    });
+    </script>
+
+    <div class="progress"></div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const height = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = (scrollTop / height) * 100;
+
+        document.querySelector('.progress').style.width = progress + '%';
+    });
+    </script>
+    
+
+
+
+
     <div class="hero">
         <div class="hero-txt-wrap">
             <div class="swiper hero-txt">
@@ -81,8 +111,23 @@
         <div class="common-frame">
             <div class="pro-title">
                 <section>
-                    <h2>Built on Basics, Driven by Detail</h2>
+                    <h2 class="typing"></h2>
                 </section>
+                <script>
+                    const text = "Built on Basics,\n Driven by Detail";
+                    let i = 0;
+                    const speed = 80;
+
+                    function typing() {
+                    if (i < text.length) {
+                        document.querySelector('.typing').innerHTML += text[i];
+                        i++;
+                        setTimeout(typing, speed);
+                    }
+                    }
+
+                    typing();
+                </script>
                 <section>
                     <h3>탄탄한 기본을 바탕으로, 디테일을 통해 완성도 높은 사용자 경험을 구현하는<br> 준비된 웹 퍼블리셔 김민지입니다.</h3>
                     <p>HTML, CSS, JavaScript의 탄탄한 기본기를 바탕으로 다양한 디바이스 환경에서도 안정적으로 작동하는<br>구조를 설계하며, 작은 인터랙션 하나까지도 의도를 담아 구현하겠습니다.</p>
@@ -223,7 +268,7 @@
                             </div>
                             <div class="swiper-slide">
                                 <h3>Christmas Sale Popup</h3>
-                                <p>크리스마스 시즌의 즐거움과 따뜻한 감성을 직관적으로 전달하는 데 초점을 맞춰 팝업을 디자인했습니다. 그린 컬러를 메인 배경으로 사용해 안정감과 겨울 시즌 특유의 분위기를 표현하고, 레드와 옐로우 포인트 컬러를 더해 시각적인 활기와 이벤트성을 강조했습니다.</p>
+                                <p>그린 컬러를 메인 배경으로 사용해 안정감과 겨울 시즌 특유의 분위기를 표현하고, 레드와 옐로우 포인트 컬러를 더해 시각적인 활기와 이벤트성을 강조했습니다.</p>
                                 <p>중앙에 핵심 메시지를 크게 배치해 주목도를 높이고, 캐릭터와 선물 요소로 시선을 자연스럽게 하단 CTA로 유도했습니다.</p>
                                 <p>직관적인 정보 전달과 함께 ‘선물을 여는 즐거움’을 경험할 수 있도록 설계한 디자인입니다.</p>
                             </div>
@@ -231,7 +276,7 @@
                                 <h3>Nike Shoes Promotion Popup</h3>
                                 <p>브랜드 Nike의 역동적인 이미지를 강조하기 위해 과감한 타이포그래피와 사선 레이아웃을 활용한 팝업입니다.</p>
                                 <p>'WE FLY' 텍스트를 대형으로 배치해 시각적 임팩트를 극대화하고, 제품 이미지를 중앙에 배치해 자연스럽게 시선을 집중시키도록 구성했습니다.</p>
-                                <p>파스텔 톤의 컬러 대비를 통해 트렌디하면서도 감각적인 분위기를 연출했으며, 그래픽 요소와 디테일한 주석을 더해 제품의 특징을 직관적으로 전달하도록 설계했습니다.</p>
+                                <p>파스텔 톤의 컬러 대비를 통해 트렌디하면서도 감각적인 분위기를 연출했으며, 그래픽 요소를 더해 제품의 특징을 직관적으로 전달하도록 설계했습니다.</p>
                             </div>
                         </div>
                     </div>
@@ -249,24 +294,24 @@
                                 <img src="./img/popup2.jpg" alt="크리스마스 팝업">
                             </div>
                             <div class="swiper-slide">
-                                <img src="" alt="나이키 신발 팝업">
+                                <img src="./img/popup3.jpg" alt="나이키 신발 팝업">
                             </div>
                         </div>
                     </div>
                     <script>
                         const popupImgSlider = new Swiper(".popup-img-slider",{
-                            slidesPerView: 1,
+                            slidesPerView: 1.4,
                             spaceBetween: 14,
                             // Responsive breakpoints
                             breakpoints: {
                                 // when window width is >= 320px
                                 320: {
-                                slidesPerView: 1.2,
+                                slidesPerView: 1.6,
                                 spaceBetween: 14
                                 },
                                 // when window width is >= 480px
                                 480: {
-                                slidesPerView: 1.2,
+                                slidesPerView: 1.6,
                                 spaceBetween: 14
                                 },
                                 // when window width is >= 640px
