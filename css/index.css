@@ -228,7 +228,7 @@ body {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background: url(../img/pattern.png) repeat 0 0,
-    url(../img/bg-box-80.jpg) no-repeat 0 calc(100% - 191px) / 100% 540px;
+    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 201px) / 100% 536px;
 }
 .popup h2{
     font-size: 5rem;
@@ -277,7 +277,6 @@ body {
 
 .poster {
     padding-top: 6rem;
-    border-top: 1px solid #3437c5;
 }
 .poster .common-frame{
     display: flex;
@@ -330,10 +329,30 @@ body {
     margin-top: 1rem;
 }
 
+.banner{
+    padding:6rem 0;
+    background-color: #3437c5;
+    color:#fff;
+    text-align: center;
+    margin-top: 6rem;
+}
+.banner h2{
+    font-size:5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.banner h2+p{
+    font-size:3rem;
+    margin-bottom: 3rem;
+}
+.banner h2+p+p{
+    margin-bottom: 3rem;
+}
+
 @media (max-width:1800px){
     .popup {
-        background: url(../img/pattern-check.png) repeat 0 0,
-            url(../img/bg-box-80.jpg) no-repeat 0 calc(100% - 191px) / 100% 490px;
+        background: url(../img/pattern.png) repeat 0 0,
+            url(../img/bg-box.jpg) no-repeat 0 calc(100% - 191px) / 100% 490px;
     }
     .poster-title{
         width:600px;
@@ -342,8 +361,8 @@ body {
 
 @media (max-width:1700px){
     .popup {
-        background: url(../img/pattern-check.png) repeat 0 0,
-        url(../img/bg-box-80.jpg) no-repeat 0 calc(100% - 191px) / 100% 430px;
+        background: url(../img/pattern.png) repeat 0 0,
+        url(../img/bg-box.jpg) no-repeat 0 calc(100% - 191px) / 100% 430px;
     }
     .poster .common-frame{
         gap:1rem;
@@ -372,8 +391,8 @@ body {
 @media (max-width:1600px){
 
     .popup {
-        background: url(../img/pattern-check.png) repeat 0 0,
-        url(../img/bg-box-80.jpg) no-repeat 0 calc(100%) / 100% 500px;
+        background: url(../img/pattern.png) repeat 0 0,
+        url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 500px;
     }
 
     .exp-title{
@@ -411,8 +430,8 @@ body {
 
 @media (max-width:1400px){
     .popup {
-        background: url(../img/pattern-check.png) repeat 0 0,
-        url(../img/bg-box-80.jpg) no-repeat 0 calc(100%) / 100% 570px;
+        background: url(../img/pattern.png) repeat 0 0,
+        url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 570px;
     }
 
     .poster-list>li{
@@ -446,8 +465,8 @@ body {
 
 @media (max-width:1050px){
     .popup {
-        background: url(../img/pattern-check.png) repeat 0 0,
-        url(../img/bg-box-80.jpg) no-repeat 0 calc(100%) / 100% 500px;
+        background: url(../img/pattern.png) repeat 0 0,
+        url(../img/bg-box.jpg) no-repeat 0 calc(100%) / 100% 500px;
     }
 }
 
@@ -483,9 +502,6 @@ body {
         padding-top: 6rem;
         gap:3rem;
         text-align: center;
-    }
-    .hero-title {
-        /* font-size: calc(100vw/4.4); */
     }
     .pro-title h2{
         font-size: 2.7rem;
@@ -555,6 +571,16 @@ body {
     }
     .popup h2+p{
         font-size: 1.3rem;
+    }
+
+    .banner h2{
+        font-size:2.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+    .banner h2+p{
+        font-size:1.3rem;
+        margin-bottom: 3rem;
     }
 }
 
