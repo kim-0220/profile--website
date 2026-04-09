@@ -63,7 +63,7 @@ body {
     height:100vh;
     min-height: 700px;
     background: 
-    linear-gradient(rgba(0, 0, 0, 0.803) 10%,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.806) 90%),
+    /* linear-gradient(rgba(0, 0, 0, 0.803) 10%,rgba(0, 0, 0, 0) 50%,rgba(0, 0, 0, 0.806) 90%), */
     url(../img/hero.jpg) no-repeat 50% 50% / cover;
     color:#fff;
     display: flex;
@@ -228,7 +228,7 @@ body {
     padding-top: 6rem;
     padding-bottom: 6rem;
     background: url(../img/pattern.png) repeat 0 0,
-    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 201px) / 100% 536px;
+    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 176px) / 100% 510px;
 }
 .popup h2{
     font-size: 5rem;
@@ -293,11 +293,14 @@ body {
 .poster-title h2{
     font-size: 5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
+
+
 .poster-title h2+p{
-    font-size:3rem;
-    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size:2rem;
+    margin-bottom: 2rem;
 }
 
 .poster-list{
@@ -331,7 +334,7 @@ body {
 
 .banner{
     padding:6rem 0;
-    background-color: #3437c5;
+    background-color: #F69E3F;
     color:#fff;
     text-align: center;
     margin-top: 6rem;
@@ -339,12 +342,16 @@ body {
 .banner h2{
     font-size:5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
+    text-align: center;
 }
 .banner h2+p{
-    font-size:3rem;
-    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2rem;
 }
+
 .banner h2+p+p{
     margin-bottom: 3rem;
 }
