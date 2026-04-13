@@ -346,11 +346,12 @@ body {
     margin-top: 6rem;
 }
 .banner h2{
-    font-size:5rem;
+    font-size: 5rem;
     font-weight: 700;
     margin-bottom: .5rem;
     text-align: center;
 }
+
 .banner h2+p{
     text-align: center;
     font-weight: 500;
@@ -369,18 +370,21 @@ body {
 .detail h2{
     font-size:5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     text-align: center;
 }
 .detail h2+p{
-    font-size:3rem;
-    margin-bottom: 3rem;
+    font-weight: 500;
+    font-size:2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 .detail h2+p+p{
     margin-bottom: 3rem;
     text-align: center;
 }
+
+
 .detail-swiper figure{
     position: relative;
     margin-bottom: 2rem;
@@ -408,6 +412,17 @@ body {
 .detail-swiper h4{
     margin-bottom: 0.5rem;
 }
+
+.swiper-slide h4{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.swiper-slide h5{
+    font-weight: 400;
+    font-size: 20px;
+}
+
 
 .btn-close{
     background-color: #fff;
