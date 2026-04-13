@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>웹퍼블리셔 김민지의 프로필 페이지입니다.</title>
-    <meta charset="UTF-8">
+
     <meta name="description" content="웹퍼블리셔 김민지의 포트폴리오 홈페이지입니다.">
     <meta name="keywords" content="웹퍼블리셔 포트폴리오, UI/UX디자이너 포트폴리오, 웹디자이너 포트폴리오 웹사이트">
     <meta name="author" content="웹퍼블리셔 김민지">
@@ -59,13 +59,23 @@
     });
     </script>
     
-
+    <div class="all-menu">
+        <ul class="all-menu-list">
+            <li><a href="#sec1">about me</a></li>
+            <li><a href="#sec2">expertise</a></li>
+            <li><a href="#sec3">popup designs</a></li>
+            <li><a href="#sec4">poster designs</a></li>
+            <li><a href="#sec5">banner designs</a></li>
+            <li><a href="#detail">PDP designs</a></li>
+            <li><a href="#sec7">responsive web project</a></li>
+            <li><a href="#sec8">contact</a></li>
+        </ul>
+    </div>
 
     <div class="hero">
         <div class="hero-txt-wrap">
             <div class="swiper hero-txt">
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide"><span class="fwb">WEB PUBLISHER</span> 김민지</div>
                     <div class="swiper-slide">올바른 구조 위에 완성도를 더하는 사람</div>
                     <div class="swiper-slide"><span class="fwb">WEB PUBLISHER</span> 김민지</div>
@@ -110,406 +120,497 @@
         </h1>
     </div>
 
-    <div class="profile">
-        <div class="common-frame">
-            <div class="pro-title">
-                <section>
-                    <h2 class="typing"></h2>
-                </section>
+    <main>
+        <div class="menu-sticky">
+            <div class="btn-menu">
+                <img class="btn-img" src="./img/btn-menu.svg" alt="전체 메뉴">
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="common-frame">
+                <div class="pro-title" id="sec1">
+                    <section>
+                        <h2 class="typing"></h2>
+                    </section>
+                    <script>
+                        const text = "Built on Basics,\n Driven by Detail";
+                        let i = 0;
+                        const speed = 80;
+
+                        function typing() {
+                        if (i < text.length) {
+                            document.querySelector('.typing').innerHTML += text[i];
+                            i++;
+                            setTimeout(typing, speed);
+                        }
+                        }
+
+                        typing();
+                    </script>
+                    <section>
+                        <h3>탄탄한 기본을 바탕으로, 디테일을 통해 완성도 높은 사용자 경험을 구현하는<br> 준비된 웹 퍼블리셔 김민지입니다.</h3>
+                        <p>HTML, CSS, JavaScript의 탄탄한 기본기를 바탕으로 다양한 디바이스 환경에서도 안정적으로 작동하는<br>구조를 설계하며, 작은 인터랙션 하나까지도 의도를 담아 구현하겠습니다.</p>
+                        <p>신입이지만 빠르게 배우고 적극적으로 개선하며, 결과물로 성장 과정을 증명하겠습니다.</p>
+                        <p>또한 단순히 화면을 구현하는 데 그치지 않고, 늘 사용자의 흐름과 경험을 함께 고민하는 자세로 임하여<br>더 나은 사용자 경험을 스스로 만들어내는 퍼블리셔가 되겠습니다.</p>
+                    </section>
+                </div>
+                <div class="profile1">
+                    <figure class="sticky-figure">
+                        <img src="./img/photo.jpg" alt="웹퍼블리셔 김민지의 실모습">
+                        <figcaption>
+                            <span class="fwb">WEB PUBLISHER</span>
+                            <span>김민지</span>
+                        </figcaption>
+                    </figure>
+                    <div class="profile-desc">
+                        <div class="profile-desc-grid">
+                            <section class="co">
+                                <h4>Collaboration</h4>
+                                <p>완성도 높은 결과물은 정확한 구현과 원활한 협업에서 만들어진다고 생각합니다.</p>
+                                <ul>
+                                    <li>
+                                        <h5>Empathetic Publisher</h5>
+                                        <p>디자인 의도를 정확히 이해하고, 개발자가 활용하기 좋은 구조로 구현하기 위해 끊임없이 소통합니다.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Structure-Oriented Thinking</h5>
+                                        <p>시맨틱 마크업과 일관된 구조 설계를 통해 협업 효율을 높이고, 유지보수에 용이한 퍼블리싱을 지향합니다.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Open to Feedback</h5>
+                                        <p>피드백을 적극적으로 수용하며 더 나은 결과를 위해 유연하게 개선하고, 함께 완성도를 높여갑니다.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="co">
+                                <h4>Core Strengths</h4>
+                                <p>더 나은 사용자 경험을 구현하기 위해, 다음과 같은 퍼블리싱 역량을 갖추고 있습니다.</p>
+                                <ul>
+                                    <li>
+                                        <h5>Systematic Publishing</h5>
+                                        <p>컴포넌트 단위의 구조 설계와 재사용 가능한 코드 작성으로 효율적인 퍼블리싱 환경을 구축합니다.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Responsive Web</h5>
+                                        <p>다양한 디바이스 환경을 고려한 반응형 웹 구현으로, 일관된 사용자 경험을 제공합니다.</p>
+                                    </li>
+                                    <li>
+                                        <h5>Logical Problem Solving</h5>
+                                        <p>레이아웃 오류나 인터랙션 이슈를 구조적으로 분석하고, 코드 기반으로 문제를 해결합니다.</p>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="expert" id="sec2">
+                            <div class="exp-title">
+                                <h2>Expertise</h2>
+                                <p>디자인 툴을 활용하여 사용자 경험과 브랜드를 고려한 시각적 결과물을 제작할 수 있으며, HTML5, CSS3, JavaScript를 기반으로 반응형 웹과 인터랙션을 구현할 수 있습니다. 또한 Git과 GitHub를 활용하여 협업과 버전 관리를 체계적으로 수행할 수 있습니다.</p>
+                            </div>
+                            <ul class="skill-grid">
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-html5.svg" alt="HTML5 icon">
+                                    </figure>
+                                    <h4>HTML5</h4>
+                                    <p>시맨틱 마크업을 기반으로 구조화된 웹 문서를 작성할 수 있으며, 유지보수와 확장성을 고려한 코드 설계를 할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-css3.svg" alt="CSS3 icon">
+                                    </figure>
+                                    <h4>CSS3</h4>
+                                    <p>Flexbox와 Grid를 활용한 반응형 레이아웃을 구현할 수 있으며, 다양한 디바이스에 대응하는 UI를 제작할 수 있습니다. 또한 애니메이션과 트랜지션을 활용하여 사용자 경험을 향상시킬 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-js.svg" alt="JavaScript icon">
+                                    </figure>
+                                    <h4>JavaScript</h4>
+                                    <p>사용자 인터랙션을 구현할 수 있으며, 이벤트 처리와 DOM 제어를 통해 동적인 UI를 구성할 수 있습니다. 간단한 기능부터 실제 서비스에 필요한 인터랙션까지 구현할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-Ps.svg" alt="Photoshop icon">
+                                    </figure>
+                                    <h4>Photoshop</h4>
+                                    <p>다양한 디바이스 환경을 고려한 이미지 보정 및 배너, 상세 페이지 등 웹 콘텐츠 디자인을 제작할 수 있으며, 색감과 레이아웃을 조정하여 완성도 높은 결과물을 구현할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-Ai.svg" alt="Illustrator icon">
+                                    </figure>
+                                    <h4>Illustrator</h4>
+                                    <p>브랜드에 맞는 아이콘과 벡터 그래픽을 제작할 수 있으며, 확장성과 활용도를 고려한 그래픽 요소를 설계할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-figma.svg" alt="Figma icon">
+                                    </figure>
+                                    <h4>Figma</h4>
+                                    <p>사용자 흐름을 고려한 UI/UX 구조를 설계할 수 있으며, 와이어프레임부터 프로토타입까지 제작하여 실제 서비스에 가까운 형태로 시각화할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-git.svg" alt="Git icon">
+                                    </figure>
+                                    <h4>Git</h4>
+                                    <p>버전 관리를 통해 작업 이력을 체계적으로 관리할 수 있으며, 브랜치 전략을 활용하여 기능 단위로 작업을 분리하고 안정적으로 병합할 수 있습니다.</p>
+                                </li>
+                                <li>
+                                    <figure class="icon">
+                                        <img src="./img/icon-github.svg" alt="GitHub icon">
+                                    </figure>
+                                    <h4>GitHub</h4>
+                                    <p>협업 환경에서 코드 공유 및 이슈 관리, 협업 커뮤니케이션을 수행할 수 있으며, 프로젝트 단위로 효율적인 코드 관리가 가능합니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="sec3">
+            <div class="common-frame">
+                <h2>Popup Designs</h2>
+                <p class="pf1">{ Point of Focus }</p>
+                <p>가로사이즈 500px로 짧은 순간 사용자의 시선을 낚아채는 매력적인 디자인을 제작해보았습니다.</p>
+                <div class="popup-contents">
+                    <div class="popup-txt">
+                        <div class="swiper popup-txt-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h3>Black Friday Popup</h3>
+                                    <p>블랙프라이데이 시즌에 맞춰 기획된 프로모션 팝업으로, 강렬한 비주얼과 대비감 있는 컬러를 활용해 시선을 빠르게 집중시키도록 디자인했습니다.</p>
+                                    <p>한정 기간 할인과 주요 혜택을 직관적으로 전달하는 레이아웃을 구성하여 사용자가 즉시 이벤트를 인지하고 참여할 수 있도록 하였습니다.</p>
+                                    <p>또한 CTA 버튼을 강조해 구매 전환을 유도하고, 브랜드의 프로모션 아이덴티티를 효과적으로 경험할 수 있도록 설계했습니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Christmas Sale Popup</h3>
+                                    <p>그린 컬러를 메인 배경으로 사용해 안정감과 겨울 시즌 특유의 분위기를 표현하고, 레드와 옐로우 포인트 컬러를 더해 시각적인 활기와 이벤트성을 강조했습니다.</p>
+                                    <p>중앙에 핵심 메시지를 크게 배치해 주목도를 높이고, 캐릭터와 선물 요소로 시선을 자연스럽게 하단 CTA로 유도했습니다.</p>
+                                    <p>직관적인 정보 전달과 함께 ‘선물을 여는 즐거움’을 경험할 수 있도록 설계한 디자인입니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Nike Shoes Promotion Popup</h3>
+                                    <p>브랜드 Nike의 역동적인 이미지를 강조하기 위해 과감한 타이포그래피와 사선 레이아웃을 활용한 팝업입니다.</p>
+                                    <p>'WE FLY' 텍스트를 대형으로 배치해 시각적 임팩트를 극대화하고, 제품 이미지를 중앙에 배치해 자연스럽게 시선을 집중시키도록 구성했습니다.</p>
+                                    <p>파스텔 톤의 컬러 대비를 통해 트렌디하면서도 감각적인 분위기를 연출했으며, 그래픽 요소를 더해 제품의 특징을 직관적으로 전달하도록 설계했습니다.</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h3>Popup</h3>
+                                    <p>??</p>
+                                    <p>??</p>
+                                    <p>??</p>
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            const popupTxtSlider = new Swiper(".popup-txt-slider",{
+                                effect:"fade",
+                                allowTouchMove: false,
+                            })
+                        </script>
+                    </div>
+                    <div class="popup-station">
+                        <div class="swiper popup-img-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/popup1.jpg" alt="블랙프라이데이 팝업">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/popup2.jpg" alt="크리스마스 팝업">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/popup3.jpg" alt="나이키 신발 팝업">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/popup4.jpg" alt=" 팝업">
+                                </div>
+                            </div>
+                        </div>
+                        <script>
+                            const popupImgSlider = new Swiper(".popup-img-slider",{
+                                // centeredSlides: true,
+                                speed:7000,
+                                autoplay:{
+                                    delay:0
+                                },
+                                loop:true,
+                                slidesPerView: 1.4,
+                                spaceBetween: 14,
+                                // Responsive breakpoints
+                                breakpoints: {
+                                    // when window width is >= 320px
+                                    320: {
+                                    slidesPerView: 1.6,
+                                    spaceBetween: 14
+                                    },
+                                    // when window width is >= 480px
+                                    480: {
+                                    slidesPerView: 1.6,
+                                    spaceBetween: 14
+                                    },
+                                    // when window width is >= 640px
+                                    1200: {
+                                    slidesPerView: 1.7,
+                                    spaceBetween: 20
+                                    },
+                                    1400: {
+                                    slidesPerView: 2.2,
+                                    spaceBetween: 20
+                                    },
+                                }
+                            })
+
+                            popupImgSlider.on('slideChange', function () {
+                                // console.log(event1ImgSlider.realIndex);
+                                popupTxtSlider.slideTo(popupImgSlider.realIndex, 1000)
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="poster" id="sec4">
+            <div class="common-frame">
+                <ul class="poster-list">
+                    <li>
+                        <figure>
+                            <img src="./img/poster1.jpg" alt="Immersive Silence">
+                        </figure>
+                        <div class="poster-txt">
+                            <h3>Immersive Silence</h3>
+                            <p>제품을 중심으로 한 미니멀한 구성과 어두운 배경 대비를 활용해 시선을 집중시키고, '노이즈 캔슬링'의 몰입감을 시각적으로 표현한 포스터입니다.</p>
+                            <p>타이포그래피는 정보 위계를 고려해 배치하여 브랜드의 프리미엄 이미지를 강조했습니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/poster2.jpg" alt="Legacy in Stripes">
+                        </figure>
+                        <div class="poster-txt">
+                            <h3>Legacy in Stripes</h3>
+                            <p>강렬한 레드 컬러와 브랜드의 상징적인 스트라이프를 중심으로 시각적 임팩트를 극대화했으며, 타이포그래피를 세로로 배치해 역동적인 흐름을 만들었습니다.</p>
+                            <p>제품을 중심으로 한 균형 잡힌 레이아웃을 통해 스포츠 헤리티지와 스트리트 감성을 동시에 표현한 포스터입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/poster3.jpg" alt="Bright Start">
+                        </figure>
+                        <div class="poster-txt">
+                            <h3>Bright Start</h3>
+                            <p>강렬한 옐로우 컬러를 기반으로 시선을 빠르게 유도하고, 볼드한 타이포그래피와 자유로운 그래픽 요소를 활용해 경쾌한 리듬감을 표현했습니다.</p>
+                            <p>중앙의 제품 이미지를 강조하여 아침 식사의 활기찬 이미지를 직관적으로 전달한 포스터입니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/poster4.jpg" alt="Flow of Flavor">
+                        </figure>
+                        <div class="poster-txt">
+                            <h3>Flow of Flavor</h3>
+                            <p>연속적으로 흐르는 컵과 커피의 움직임을 통해 시각적인 리듬감을 형성하고, 자연스럽게 시선이 아래로 이어지도록 설계했습니다.</p>
+                            <p>블루 톤의 배경과 대비되는 따뜻한 커피 컬러를 활용해 브랜드의 시그니처 이미지를 강조한 포스터입니다.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="poster-title">
+                    <h2>Poster Designs</h2>
+                    <p class="pf1">{ Designed to Communicate } </p>
+                    <p>디자인과 콘텐츠의 흐름을 고려해,<br>사용자에게 직관적으로 전달되는 구조 중심의 포스터를 제작했습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="banner" id="sec5">
+            <div class="common-frame">
+                <h2>Banner Designs</h2>
+                <p class="pf1">{ Visual Entry }</p>
+                <p>브랜드의 첫인상을 효과적으로 전달하기 위해 시각적 흐름과 구조를 중심으로 설계했습니다.</p>
+                <div class="swiper banner-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/banner1.jpg" alt="크리스마스 배너">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner2.jpg" alt="나이키 세일 배너">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner3.jpg" alt="배너">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/banner4.jpg" alt="배너">
+                        </div>
+                    </div>
+                </div>
                 <script>
-                    const text = "Built on Basics,\n Driven by Detail";
-                    let i = 0;
-                    const speed = 80;
-
-                    function typing() {
-                    if (i < text.length) {
-                        document.querySelector('.typing').innerHTML += text[i];
-                        i++;
-                        setTimeout(typing, speed);
-                    }
-                    }
-
-                    typing();
+                    const bannerSlider = new Swiper(".banner-slider",{
+                        autoplay:{
+                            delay:3000
+                        },
+                        speed:1000,
+                        loop:true
+                    })
                 </script>
-                <section>
-                    <h3>탄탄한 기본을 바탕으로, 디테일을 통해 완성도 높은 사용자 경험을 구현하는<br> 준비된 웹 퍼블리셔 김민지입니다.</h3>
-                    <p>HTML, CSS, JavaScript의 탄탄한 기본기를 바탕으로 다양한 디바이스 환경에서도 안정적으로 작동하는<br>구조를 설계하며, 작은 인터랙션 하나까지도 의도를 담아 구현하겠습니다.</p>
-                    <p>신입이지만 빠르게 배우고 적극적으로 개선하며, 결과물로 성장 과정을 증명하겠습니다.</p>
-                    <p>또한 단순히 화면을 구현하는 데 그치지 않고, 늘 사용자의 흐름과 경험을 함께 고민하는 자세로 임하여<br>더 나은 사용자 경험을 스스로 만들어내는 퍼블리셔가 되겠습니다.</p>
-                </section>
-            </div>
-            <div class="profile1">
-                <figure class="sticky-figure">
-                    <img src="./img/photo.jpg" alt="웹퍼블리셔 김민지의 실모습">
-                    <figcaption>
-                        <span class="fwb">WEB PUBLISHER</span>
-                        <span>김민지</span>
-                    </figcaption>
-                </figure>
-                <div class="profile-desc">
-                    <div class="profile-desc-grid">
-                        <section class="co">
-                            <h4>Collaboration</h4>
-                            <p>완성도 높은 결과물은 정확한 구현과 원활한 협업에서 만들어진다고 생각합니다.</p>
-                            <ul>
-                                <li>
-                                    <h5>Empathetic Publisher</h5>
-                                    <p>디자인 의도를 정확히 이해하고, 개발자가 활용하기 좋은 구조로 구현하기 위해 끊임없이 소통합니다.</p>
-                                </li>
-                                <li>
-                                    <h5>Structure-Oriented Thinking</h5>
-                                    <p>시맨틱 마크업과 일관된 구조 설계를 통해 협업 효율을 높이고, 유지보수에 용이한 퍼블리싱을 지향합니다.</p>
-                                </li>
-                                <li>
-                                    <h5>Open to Feedback</h5>
-                                    <p>피드백을 적극적으로 수용하며 더 나은 결과를 위해 유연하게 개선하고, 함께 완성도를 높여갑니다.</p>
-                                </li>
-                            </ul>
-                        </section>
-                        <section class="co">
-                            <h4>Core Strengths</h4>
-                            <p>더 나은 사용자 경험을 구현하기 위해, 다음과 같은 퍼블리싱 역량을 갖추고 있습니다.</p>
-                            <ul>
-                                <li>
-                                    <h5>Systematic Publishing</h5>
-                                    <p>컴포넌트 단위의 구조 설계와 재사용 가능한 코드 작성으로 효율적인 퍼블리싱 환경을 구축합니다.</p>
-                                </li>
-                                <li>
-                                    <h5>Responsive Web</h5>
-                                    <p>다양한 디바이스 환경을 고려한 반응형 웹 구현으로, 일관된 사용자 경험을 제공합니다.</p>
-                                </li>
-                                <li>
-                                    <h5>Logical Problem Solving</h5>
-                                    <p>레이아웃 오류나 인터랙션 이슈를 구조적으로 분석하고, 코드 기반으로 문제를 해결합니다.</p>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-                    <div class="expert">
-                        <div class="exp-title">
-                            <h2>Expertise</h2>
-                            <p>디자인 툴을 활용하여 사용자 경험과 브랜드를 고려한 시각적 결과물을 제작할 수 있으며, HTML5, CSS3, JavaScript를 기반으로 반응형 웹과 인터랙션을 구현할 수 있습니다. 또한 Git과 GitHub를 활용하여 협업과 버전 관리를 체계적으로 수행할 수 있습니다.</p>
-                        </div>
-                        <ul class="skill-grid">
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-html5.svg" alt="HTML5 icon">
-                                </figure>
-                                <h4>HTML5</h4>
-                                <p>시맨틱 마크업을 기반으로 구조화된 웹 문서를 작성할 수 있으며, 유지보수와 확장성을 고려한 코드 설계를 할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-css3.svg" alt="CSS3 icon">
-                                </figure>
-                                <h4>CSS3</h4>
-                                <p>Flexbox와 Grid를 활용한 반응형 레이아웃을 구현할 수 있으며, 다양한 디바이스에 대응하는 UI를 제작할 수 있습니다. 또한 애니메이션과 트랜지션을 활용하여 사용자 경험을 향상시킬 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-js.svg" alt="JavaScript icon">
-                                </figure>
-                                <h4>JavaScript</h4>
-                                <p>사용자 인터랙션을 구현할 수 있으며, 이벤트 처리와 DOM 제어를 통해 동적인 UI를 구성할 수 있습니다. 간단한 기능부터 실제 서비스에 필요한 인터랙션까지 구현할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-Ps.svg" alt="Photoshop icon">
-                                </figure>
-                                <h4>Photoshop</h4>
-                                <p>다양한 디바이스 환경을 고려한 이미지 보정 및 배너, 상세 페이지 등 웹 콘텐츠 디자인을 제작할 수 있으며, 색감과 레이아웃을 조정하여 완성도 높은 결과물을 구현할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-Ai.svg" alt="Illustrator icon">
-                                </figure>
-                                <h4>Illustrator</h4>
-                                <p>브랜드에 맞는 아이콘과 벡터 그래픽을 제작할 수 있으며, 확장성과 활용도를 고려한 그래픽 요소를 설계할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-figma.svg" alt="Figma icon">
-                                </figure>
-                                <h4>Figma</h4>
-                                <p>사용자 흐름을 고려한 UI/UX 구조를 설계할 수 있으며, 와이어프레임부터 프로토타입까지 제작하여 실제 서비스에 가까운 형태로 시각화할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-git.svg" alt="Git icon">
-                                </figure>
-                                <h4>Git</h4>
-                                <p>버전 관리를 통해 작업 이력을 체계적으로 관리할 수 있으며, 브랜치 전략을 활용하여 기능 단위로 작업을 분리하고 안정적으로 병합할 수 있습니다.</p>
-                            </li>
-                            <li>
-                                <figure class="icon">
-                                    <img src="./img/icon-github.svg" alt="GitHub icon">
-                                </figure>
-                                <h4>GitHub</h4>
-                                <p>협업 환경에서 코드 공유 및 이슈 관리, 협업 커뮤니케이션을 수행할 수 있으며, 프로젝트 단위로 효율적인 코드 관리가 가능합니다.</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
 
-    <div class="popup">
-        <div class="common-frame">
-            <h2>Popup Designs</h2>
-            <p class="pf1">{ Point of Focus }</p>
-            <p>가로사이즈 500px로 짧은 순간 사용자의 시선을 낚아채는 매력적인 디자인을 제작해보았습니다.</p>
-            <div class="popup-contents">
-                <div class="popup-txt">
-                    <div class="swiper popup-txt-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <h3>Black Friday Popup</h3>
-                                <p>블랙프라이데이 시즌에 맞춰 기획된 프로모션 팝업으로, 강렬한 비주얼과 대비감 있는 컬러를 활용해 시선을 빠르게 집중시키도록 디자인했습니다.</p>
-                                <p>한정 기간 할인과 주요 혜택을 직관적으로 전달하는 레이아웃을 구성하여 사용자가 즉시 이벤트를 인지하고 참여할 수 있도록 하였습니다.</p>
-                                <p>또한 CTA 버튼을 강조해 구매 전환을 유도하고, 브랜드의 프로모션 아이덴티티를 효과적으로 경험할 수 있도록 설계했습니다.</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h3>Christmas Sale Popup</h3>
-                                <p>그린 컬러를 메인 배경으로 사용해 안정감과 겨울 시즌 특유의 분위기를 표현하고, 레드와 옐로우 포인트 컬러를 더해 시각적인 활기와 이벤트성을 강조했습니다.</p>
-                                <p>중앙에 핵심 메시지를 크게 배치해 주목도를 높이고, 캐릭터와 선물 요소로 시선을 자연스럽게 하단 CTA로 유도했습니다.</p>
-                                <p>직관적인 정보 전달과 함께 ‘선물을 여는 즐거움’을 경험할 수 있도록 설계한 디자인입니다.</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h3>Nike Shoes Promotion Popup</h3>
-                                <p>브랜드 Nike의 역동적인 이미지를 강조하기 위해 과감한 타이포그래피와 사선 레이아웃을 활용한 팝업입니다.</p>
-                                <p>'WE FLY' 텍스트를 대형으로 배치해 시각적 임팩트를 극대화하고, 제품 이미지를 중앙에 배치해 자연스럽게 시선을 집중시키도록 구성했습니다.</p>
-                                <p>파스텔 톤의 컬러 대비를 통해 트렌디하면서도 감각적인 분위기를 연출했으며, 그래픽 요소를 더해 제품의 특징을 직관적으로 전달하도록 설계했습니다.</p>
-                            </div>
-                            <div class="swiper-slide">
-                                <h3>Popup</h3>
-                                <p>??</p>
-                                <p>??</p>
-                                <p>??</p>
-                            </div>
+        <div class="detail" id="detail">
+            <div class="common-frame">
+                <h2>Detail Designs</h2>
+                <p class="pf1">{ Scroll Experience }</p>
+                <p>AI어시스턴스와 디자인 툴 포토샵 일러스트레이터를 사용하여 자연스러운 스크롤 흐름을 통해 콘텐츠가 끊기지 않고 이어지도록 구성 및 제작했습니다.</p>
+                <div class="swiper detail-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="./detail-1.html">
+                                <figure>
+                                    <img src="./img/detail-thumb-lotion.jpg" alt="로션 디테일페이지 썸네일">
+                                </figure>
+                                <h4>Dermatological Care</h4>
+                                <h5 class="fwb">저자극 포뮬러와 피부 보호 기능을 신뢰감 있게 전달하는 상세페이지</h5>
+                            </a>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <a href="./detail-2.html">
+                                <figure>
+                                    <img src="./img/detail-thumb-vitaminC.jpg" alt="멀티비타민구미 디테일페이지 썸네일">
+                                </figure>
+                                <h4>Chew Your Vitamins</h4>
+                                <h5 class="fwb">씹어 먹는 간편함과 영양 밸런스를 직관적으로 전달한 상세페이지</h5>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="./detail-3.html">
+                                <figure>
+                                    <img src="./img/detail-thumb-chair.jpg" alt="의자 디테일페이지 섬네일">
+                                </figure>
+                                <h4>Ergonomic Comfort</h4>
+                                <h5 class="fwb">오랜 시간 앉아도 편안함을 유지할 수 있도록 설계한 의자 상세페이지</h5>
+                            </a>
                         </div>
                     </div>
-                    <script>
-                        const popupTxtSlider = new Swiper(".popup-txt-slider",{
-                            effect:"fade",
-                            allowTouchMove: false,
-                        })
-                    </script>
                 </div>
-                <div class="popup-station">
-                    <div class="swiper popup-img-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="./img/popup1.jpg" alt="블랙프라이데이 팝업">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/popup2.jpg" alt="크리스마스 팝업">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/popup3.jpg" alt="나이키 신발 팝업">
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="./img/popup4.jpg" alt=" 팝업">
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        const popupImgSlider = new Swiper(".popup-img-slider",{
-                            // centeredSlides: true,
-                            speed:7000,
-                            autoplay:{
-                                delay:0
+                <script>
+                    const detailSwiper = new Swiper(".detail-swiper",{
+                        speed:1000,
+                        slidesPerView: 1.2,
+                        spaceBetween: 14,
+                        // Responsive breakpoints
+                        breakpoints: {
+                            // when window width is >= 320px
+                            320: {
+                            slidesPerView: 1.6,
+                            spaceBetween: 14
                             },
-                            loop:true,
-                            slidesPerView: 1.4,
-                            spaceBetween: 14,
-                            // Responsive breakpoints
-                            breakpoints: {
-                                // when window width is >= 320px
-                                320: {
-                                slidesPerView: 1.6,
-                                spaceBetween: 14
-                                },
-                                // when window width is >= 480px
-                                480: {
-                                slidesPerView: 1.6,
-                                spaceBetween: 14
-                                },
-                                // when window width is >= 640px
-                                1200: {
-                                slidesPerView: 1.7,
-                                spaceBetween: 20
-                                },
-                                1400: {
-                                slidesPerView: 2.2,
-                                spaceBetween: 20
-                                },
-                            }
-                        })
+                            // when window width is >= 480px
+                            480: {
+                            slidesPerView: 1.6,
+                            spaceBetween: 14
+                            },
+                            // when window width is >= 640px
+                            1200: {
+                            slidesPerView: 2.2,
+                            spaceBetween: 20
+                            },
+                            1400: {
+                            slidesPerView: 3,
+                            spaceBetween: 20
+                            },
+                        }
+                    })
+                </script>
+            </div>
+        </div>
 
-                        popupImgSlider.on('slideChange', function () {
-                            // console.log(event1ImgSlider.realIndex);
-                            popupTxtSlider.slideTo(popupImgSlider.realIndex, 1000)
-                        });
-                    </script>
+        <div class="project" id="sec7">
+            <div class="common-frame">
+                <h2>Responsive Web Works</h2>
+                <p class="pf1">{  Modern & Minimal  }</p>
+                <p>실제 서비스 환경을 고려하여 제작된 반응형 프로젝트들입니다.<br>그리드 시스템과 상대단위를 활용하여 어떤 브라우저에서도 왜곡 없는 UI를 경험 하실 수 있도록 디자인하였습니다.</p>
+                <h3 class="ptitle">Break Point</h3>
+                <ul class="responsive-icon">
+                    <li>
+                        <figure>
+                            <img src="./img/brk1.svg" alt="모바일 768픽셀">
+                        </figure>
+                        <h5>mobile</h5>
+                        <p>768px</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/brk2.svg" alt="탭패드 1024픽셀">
+                        </figure>
+                        <h5>tab - pad</h5>
+                        <p>1024px</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/brk3.svg" alt="데스크탑 1024픽셀 이상">
+                        </figure>
+                        <h5>desktop</h5>
+                        <p>1920px</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="project-content">
+                <div class="common-frame">
+                    <h3><span>1</span>Project</h3>
+                    <h4>MORVA Coffee Responsive WebSite</h4>
+                    <p class="fwb">커피의 화려함보다는 '본질(Flavor)'과 '휴식(Moment)'에 집중했습니다.</p>
+                    <p>장식적인 요소를 최소화하고 화이트 스페이스(여백)를 과감하게 활용하여,<br> 사용자가 브랜드의 이미지와 콘텐츠에 온전히 몰입할 수 있는 미니멀리즘 디자인을 채택했습니다.</p>
                 </div>
+                <ul class="project-sticky">
+                    <li><a href="#">Original</a></li>
+                    <li><a href="#">Renewal</a></li>
+                </ul>
+                <figure class="project-detail">
+                    <img src="./img/moov_pc.jpg" alt="모르바프로젝트 디테일샷 pc" class="pc">
+                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                </figure>
             </div>
-        </div>
-    </div>
-
-    <div class="poster">
-        <div class="common-frame">
-            <ul class="poster-list">
-                <li>
-                    <figure>
-                        <img src="./img/poster1.jpg" alt="Immersive Silence">
-                    </figure>
-                    <div class="poster-txt">
-                        <h3>Immersive Silence</h3>
-                        <p>제품을 중심으로 한 미니멀한 구성과 어두운 배경 대비를 활용해 시선을 집중시키고, '노이즈 캔슬링'의 몰입감을 시각적으로 표현한 포스터입니다.</p>
-                        <p>타이포그래피는 정보 위계를 고려해 배치하여 브랜드의 프리미엄 이미지를 강조했습니다.</p>
-                    </div>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./img/poster2.jpg" alt="Legacy in Stripes">
-                    </figure>
-                    <div class="poster-txt">
-                        <h3>Legacy in Stripes</h3>
-                        <p>강렬한 레드 컬러와 브랜드의 상징적인 스트라이프를 중심으로 시각적 임팩트를 극대화했으며, 타이포그래피를 세로로 배치해 역동적인 흐름을 만들었습니다.</p>
-                        <p>제품을 중심으로 한 균형 잡힌 레이아웃을 통해 스포츠 헤리티지와 스트리트 감성을 동시에 표현한 포스터입니다.</p>
-                    </div>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./img/poster3.jpg" alt="Bright Start">
-                    </figure>
-                    <div class="poster-txt">
-                        <h3>Bright Start</h3>
-                        <p>강렬한 옐로우 컬러를 기반으로 시선을 빠르게 유도하고, 볼드한 타이포그래피와 자유로운 그래픽 요소를 활용해 경쾌한 리듬감을 표현했습니다.</p>
-                        <p>중앙의 제품 이미지를 강조하여 아침 식사의 활기찬 이미지를 직관적으로 전달한 포스터입니다.</p>
-                    </div>
-                </li>
-                <li>
-                    <figure>
-                        <img src="./img/poster4.jpg" alt="Flow of Flavor">
-                    </figure>
-                    <div class="poster-txt">
-                        <h3>Flow of Flavor</h3>
-                        <p>연속적으로 흐르는 컵과 커피의 움직임을 통해 시각적인 리듬감을 형성하고, 자연스럽게 시선이 아래로 이어지도록 설계했습니다.</p>
-                        <p>블루 톤의 배경과 대비되는 따뜻한 커피 컬러를 활용해 브랜드의 시그니처 이미지를 강조한 포스터입니다.</p>
-                    </div>
-                </li>
-            </ul>
-            <div class="poster-title">
-                <h2>Poster Designs</h2>
-                <p class="pf1">{ Designed to Communicate } </p>
-                <p>디자인과 콘텐츠의 흐름을 고려해,<br>사용자에게 직관적으로 전달되는 구조 중심의 포스터를 제작했습니다.</p>
-            </div>
-        </div>
-    </div>
-    <div class="banner">
-        <div class="common-frame">
-            <h2>Banner Designs</h2>
-            <p class="pf1">{ Visual Entry }</p>
-            <p>브랜드의 첫인상을 효과적으로 전달하기 위해 시각적 흐름과 구조를 중심으로 설계했습니다.</p>
-            <div class="swiper banner-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./img/banner1.jpg" alt="크리스마스 배너">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/banner2.jpg" alt="나이키 세일 배너">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/banner3.jpg" alt="배너">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./img/banner4.jpg" alt="배너">
-                    </div>
+            <div class="project-content">
+                <div class="common-frame">
+                    <h3><span>2</span>Project</h3>
+                    <h4>MORVA Coffee Responsive WebSite</h4>
+                    <p class="fwb">커피의 화려함보다는 '본질(Flavor)'과 '휴식(Moment)'에 집중했습니다.</p>
+                    <p>장식적인 요소를 최소화하고 화이트 스페이스(여백)를 과감하게 활용하여,<br> 사용자가 브랜드의 이미지와 콘텐츠에 온전히 몰입할 수 있는 미니멀리즘 디자인을 채택했습니다.</p>
                 </div>
+                <ul class="project-sticky">
+                    <li><a href="#">Original</a></li>
+                    <li><a href="#">Renewal</a></li>
+                </ul>
+                <figure class="project-detail">
+                    <img src="./img/moov_pc.jpg" alt="모르바프로젝트 디테일샷 pc" class="pc">
+                    <img src="./img/moov_tab.jpg" alt="모르바프로젝트 디테일샷 mobile" class="mo">
+                </figure>
             </div>
-            <script>
-                const bannerSlider = new Swiper(".banner-slider",{
-                    autoplay:{
-                        delay:3000
-                    },
-                    speed:1000,
-                    loop:true
-                })
-            </script>
+    
         </div>
-    </div>
-
-    <div class="detail" id="detail">
-        <div class="common-frame">
-            <h2>Detail Designs</h2>
-            <p class="pf1">{ Scroll Experience }</p>
-            <p>AI어시스턴스와 디자인 툴 포토샵 일러스트레이터를 사용하여 자연스러운 스크롤 흐름을 통해 콘텐츠가 끊기지 않고 이어지도록 구성 및 제작했습니다.</p>
-            <div class="swiper detail-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <a href="./detail-1.html">
-                            <figure>
-                                <img src="./img/detail-thumb-lotion.jpg" alt="로션 디테일페이지 썸네일">
-                            </figure>
-                            <h4>Dermatological Care</h4>
-                            <h5 class="fwb">저자극 포뮬러와 피부 보호 기능을 신뢰감 있게 전달하는 상세페이지</h5>
-                        </a>
-                    </div>
-                    
-                    <div class="swiper-slide">
-                        <a href="./detail-2.html">
-                            <figure>
-                                <img src="./img/detail-thumb-vitaminC.jpg" alt="멀티비타민구미 디테일페이지 썸네일">
-                            </figure>
-                            <h4>Chew Your Vitamins</h4>
-                            <h5 class="fwb">씹어 먹는 간편함과 영양 밸런스를 직관적으로 전달한 상세페이지</h5>
-                        </a>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <a href="./detail-3.html">
-                            <figure>
-                                <img src="./img/detail-thumb-chair.jpg" alt="의자 디테일페이지 섬네일">
-                            </figure>
-                            <h4>Ergonomic Comfort</h4>
-                            <h5 class="fwb">오랜 시간 앉아도 편안함을 유지할 수 있도록 설계한 의자 상세페이지</h5>
-                        </a>
-                    </div>
-                </div>
+    
+        <div class="contact" id="sec8">
+            <div class="common-frame">
+                <h1>A Designer Growing</h1>
+                <figure class="pro-img">
+                    <img src="./img/contacimg.jpg" alt="웹디자이너 정현진">
+                </figure>
+                <h2>멈추지 않는 엔진, 함께 성장하는 디자이너 정현진입니다.</h2>
+                <p>오늘의 트렌드에 안주하지 않고, 내일의 기술을 학습하며 브랜드와 함께 성장하겠습니다.<br>매일 1%의 디테일을 더해 어제보다 나은 사용자 경험을 설계하는 디자이너 정현진이 되겠습니다.</p>
+                <h3>Here</h3>
+                <ul class="contact-menu">
+                    <li><a href="#">Design Resume</a></li>
+                    <li><a href="tel:01062629996">010-6262-9996</a></li>
+                    <li><a href="mailto:green4alse@gmail.com">green4alse@gmail.com</a></li>
+                </ul>
             </div>
-            <script>
-                const detailSwiper = new Swiper(".detail-swiper",{
-                    speed:1000,
-                    slidesPerView: 1.2,
-                    spaceBetween: 14,
-                    // Responsive breakpoints
-                    breakpoints: {
-                        // when window width is >= 320px
-                        320: {
-                        slidesPerView: 1.6,
-                        spaceBetween: 14
-                        },
-                        // when window width is >= 480px
-                        480: {
-                        slidesPerView: 1.6,
-                        spaceBetween: 14
-                        },
-                        // when window width is >= 640px
-                        1200: {
-                        slidesPerView: 2.2,
-                        spaceBetween: 20
-                        },
-                        1400: {
-                        slidesPerView: 3,
-                        spaceBetween: 20
-                        },
-                    }
-                })
-            </script>
         </div>
-    </div>
+        
+    </main>
 
 </body>
 </html>
