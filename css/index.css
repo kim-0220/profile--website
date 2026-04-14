@@ -340,11 +340,15 @@ body {
 
 .banner{
     padding:6rem 0;
-    background-color: #F69E3F;
-    color:#fff;
+    background-color: white;
+    color: black;
     text-align: center;
     margin-top: 6rem;
+    background: url(../img/pattern.png) repeat 0 0,
+    url(../img/bg-box.jpg) no-repeat 0 100% / 100% 817px;
 }
+
+
 .banner h2{
     font-size: 5rem;
     font-weight: 700;
@@ -607,6 +611,11 @@ body {
     padding:6rem 0 8rem;
     text-align: center;
 }
+
+.contact figure img{
+    height: 600px;
+}
+
 .contact h1{
     font-size: calc(100vw / 11);
     font-weight: 700;
@@ -616,7 +625,8 @@ body {
     left:0;
     opacity: 0.2;
     color: white;
-    mix-blend-mode: plus-lighter;
+    /* mix-blend-mode: plus-lighter; */
+    mix-blend-mode: overlay;
 }
 .contact h2{
     font-size: 2rem;
@@ -632,14 +642,15 @@ body {
 .contact-menu a{
     display: block;
     padding:0.5rem 1.5rem;
-    font-size: 0.8rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
     border:2px solid #fff;
     border-radius: 100px;
 }
 .contact-menu a:hover{
     background-color: #fff;
-    color:#000;
+    color: #F69E3F;
+    font-weight: 700;
 }
 
 .contact h3{
