@@ -602,8 +602,8 @@ body {
 }
 
 .contact{
-    background-color: white;
-    color:black;
+    background-color: #F69E3F;
+    color:#fff;
     padding:6rem 0 8rem;
     text-align: center;
 }
@@ -614,8 +614,9 @@ body {
     position: sticky;
     top:30vh;
     left:0;
-    mix-blend-mode: difference;
     opacity: 0.2;
+    color: white;
+    mix-blend-mode: plus-lighter;
 }
 .contact h2{
     font-size: 2rem;
@@ -633,12 +634,12 @@ body {
     padding:0.5rem 1.5rem;
     font-size: 0.8rem;
     font-weight: 500;
-    border:1px solid black;
+    border:2px solid #fff;
     border-radius: 100px;
 }
 .contact-menu a:hover{
-    background-color: black;
-    color:white;
+    background-color: #fff;
+    color:#000;
 }
 
 .contact h3{
