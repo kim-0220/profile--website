@@ -284,24 +284,28 @@ body {
     margin-top: 6rem;
     padding-top: 6rem;
     padding-bottom: 6rem;
-    background: url(../img/pattern.png) repeat 0 0,
-    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 176px) / 100% 510px;
+    background: url(../img/bg-popup.jpg) no-repeat 50% 50% / cover;
+    /* background: url(../img/pattern.png) repeat 0 0,
+    url(../img/bg-box.jpg) no-repeat 0 calc(100% - 176px) / 100% 510px; */
 }
 .popup h2{
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: .5rem;
     text-align: center;
+    color: white;
 }
 .popup h2+p{
     text-align: center;
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: white;
 }
 .popup h2+p+p{
     text-align: center;
     margin-bottom: 8rem;
+    color: white;
 }
 .popup-contents{
     display: flex;
@@ -311,6 +315,20 @@ body {
     width:430px;
     color:#fff;
 }
+
+
+.popup-txt-slider {
+    max-height: 520px;  
+    overflow: hidden;
+}
+
+.popup-txt-slider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .popup-station{
     width:calc(100% - 430px - 177px);
 }
@@ -324,9 +342,6 @@ body {
     margin-top: 1rem;
 }
 
-.popup-txt-slider .swiper-slide{
-    background-color: #F69E3F;
-}
 
 .popup-img-slider .swiper-wrapper{
     transition-timing-function: linear;
@@ -341,16 +356,22 @@ body {
 .poster {
     padding-top: 6rem;
 }
-.poster .common-frame{
+
+.poster>.common-frame{
     display: flex;
-    gap:172px;
-    align-items: flex-start;
+    gap: 200px;
 }
+
+.poster-station{
+    width:calc(100% - 1050px);
+}
+
+
 .poster-title{
     width:734px;
-    position: sticky;
+    /* position: sticky;
     top:6rem;
-    left:0;
+    left:0; */
     
 }
 .poster-title h2{
@@ -366,7 +387,11 @@ body {
     margin-bottom: 2rem;
 }
 
-.poster-list{
+.poster h2+p+p{
+    margin-bottom: 8rem;
+}
+
+/* .poster-list{
     flex:1;
     display: flex;
     flex-direction: column;    
@@ -386,7 +411,7 @@ body {
 .poster-txt{
     flex:1;
     padding-top: 5rem;
-}
+} */
 .poster-txt h3{
     font-weight: 700;
     margin-bottom: 4rem;
@@ -401,8 +426,7 @@ body {
     color: black;
     text-align: center;
     margin-top: 6rem;
-    background: url(../img/pattern.png) repeat 0 0,
-    url(../img/bg-box.jpg) no-repeat 0 100% / 100% 817px;
+    background: url(../img/bg-banner.jpg) no-repeat 50% 50% / cover;
 }
 
 
@@ -411,6 +435,7 @@ body {
     font-weight: 700;
     margin-bottom: .5rem;
     text-align: center;
+    color: white;
 }
 
 .banner h2+p{
@@ -418,10 +443,12 @@ body {
     font-weight: 500;
     font-size: 2rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 .banner h2+p+p{
     margin-bottom: 3rem;
+    color: white;
 }
 
 .detail{
@@ -573,12 +600,16 @@ body {
     line-height: 140%;
 }
 
+.project{
+    background-color: rgba(153, 205, 50, 0.096);
+}
 
 .project h2{
     font-size:5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
+    padding-top: 6rem;
 }
 .project h2+p{
     font-size:3rem;
@@ -619,7 +650,7 @@ body {
     margin-bottom: 6rem;
 }
 .project-content{
-    background-color: #fafafa;
+    background-color: white;
     padding:6rem 0;
     text-align: center;
     padding-bottom: 0;
@@ -663,10 +694,10 @@ body {
 }
 
 .contact{
-    background-color: #F69E3F;
-    color:#fff;
+    color:white;
     padding:6rem 0 8rem;
     text-align: center;
+    background: url(../img/bg-contact.jpg) no-repeat 50% 50% / cover;
 }
 
 .contact figure img{
