@@ -352,46 +352,33 @@ body {
     object-fit: cover;
 }
 
-
 .poster {
     padding-top: 6rem;
 }
 
-.poster>.common-frame{
+.poster .common-frame{
     display: flex;
-    gap: 200px;
+    gap:172px;
+    align-items: flex-start;
 }
-
-.poster-station{
-    width:calc(100% - 1050px);
-}
-
-
 .poster-title{
     width:734px;
-    /* position: sticky;
+    position: sticky;
     top:6rem;
-    left:0; */
+    left:0;
     
 }
 .poster-title h2{
     font-size: 5rem;
     font-weight: 700;
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
 }
-
-
 .poster-title h2+p{
-    font-weight: 500;
-    font-size:2rem;
-    margin-bottom: 2rem;
+    font-size:3rem;
+    margin-bottom: 3rem;
 }
 
-.poster h2+p+p{
-    margin-bottom: 8rem;
-}
-
-/* .poster-list{
+.poster-list{
     flex:1;
     display: flex;
     flex-direction: column;    
@@ -408,21 +395,17 @@ body {
     width:500px;
     flex-shrink: 0;
 }
+
 .poster-txt{
     flex:1;
     padding-top: 5rem;
-} */
+}
 .poster-txt h3{
     font-weight: 700;
-    margin-top: 3rem;
+    margin-bottom: 4rem;
 }
 .poster-txt p{
-    margin-top: 0.8rem;
-}
-
-.poster img{
-    width: auto;
-    height: 600px;
+    margin-top: 1rem;
 }
 
 .banner{
@@ -886,6 +869,24 @@ body {
         height: auto;
     }
 
+
+    .popup {
+        height: 800px;
+        background: url(../img/bg-popup.jpg) no-repeat 50% 50% / cover;
+    }
+
+    .poster-title h2 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    
+    .poster-title h2+p {
+        font-size: 2rem;
+        margin-bottom: 2.5rem;
+    }
+
 }
 @media (max-width:1440px){
     
@@ -898,7 +899,6 @@ body {
         left:0;
         top:3rem;
     }
-
 
     .banner-hero{
         gap: 1.5rem;
@@ -1033,6 +1033,10 @@ body {
         font-size: 16px;
     }
 
+
+    .popup {
+        height: 700px;
+    }
 }
 
 @media (max-width:850px){
@@ -1226,7 +1230,27 @@ body {
     }
 
 
+    .popup {
+        height: 900px;
+    }
+
+
+    .popup-contents {
+        gap: 3rem;
+    }
+
+
 }
+
+@media (max-width:630px){
+    .popup {
+        height: 850px;
+    }
+    .popup-contents {
+        gap: 3rem;
+    }
+}
+
 
 @media (max-width:500px){
     .popup h2+p+p{
@@ -1247,8 +1271,16 @@ body {
         padding-top: 10px;
         font-size: 12px;
     }
-}
 
+    .popup {
+        height: 750px;
+    }
+
+    .popup-contents {
+        gap: 3rem;
+    }
+
+}
 
 
 @media (max-width:350px){
