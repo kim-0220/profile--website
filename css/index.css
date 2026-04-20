@@ -817,7 +817,7 @@ body {
         url(../img/bg-box.jpg) no-repeat 0 calc(100% - 191px) / 100% 430px;
     } */
     .poster .common-frame{
-        gap:1rem;
+        gap:5rem;
     }
     .poster-title {
         width: initial;
